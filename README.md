@@ -27,7 +27,7 @@ Find insights from the dataset for ride service.
 ## 🧐 About <a name = "about"></a>
 Understand the dataset, estimate the charged rate, identify patterns, and determine the best locations for drivers to pick up customers to achieve a higher charge rate.
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXhhNXRsOWJxYjlibTljcnFzcnEyeXpsZ2dsdGU4cmRrYTFzYm9uNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEjHKvf3PoUw8pso8/giphy.gif" width="450" />
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenp5NnVnMmdrczF1enJuOTlzMWdncWw3d2p2dWtkamh6bTg0am1ydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CnQ6jjqggL2Ar23XtQ/giphy.gif" width="450" />
 
 ### Prerequisites
 SQL, Tableau, Python or Jupyter Notebook 
