@@ -36,10 +36,15 @@ SQL, Tableau, Python or Jupyter Notebook
 ## 🔖 Data Cleaning <a name = "data_leaning"></a>
 
 Basic information of the dataset (please refer to Appendices on the page 10, 11 and 12)
+
   a.	Original record: 1337759 rows, 20 columns
+  
   b.	Data: continuous data (regression models)
+  
   c.	Duplicates: No duplicates
+  
   d.	Outliners: 17997 rows were removed
+  
       i.	Three rows (RateCodeID=99, which were not explained on the data dictionary)
       ii.	17994 rows (Trip distance was 0, but the fare amount was more than $100)
   e.	Null values: 1337759 counts on the “Ehail_fee” column.
