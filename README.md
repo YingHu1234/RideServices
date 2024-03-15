@@ -18,8 +18,8 @@ Find insights from the dataset for ride service.
 ## 📝 Table of Contents
 - [About](#about)
 - [Data Clearning](#data_leaning)
-- [General Picture](#GeneralPicture)
-- [Other  Insights ](#OtherInsights)
+- [General Picture](#general_picture)
+- [Other  Insights ](#other_insights)
 - [Conclusion](#conclusion)
 
 
@@ -67,7 +67,7 @@ Tools were used for this project: Python, MySQL, and Tableau
 ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/15.png)
 
 
-## 🌱 General Picture <a name = "GeneralPicture)"></a> 
+## 🌱 General Picture <a name = "general_picture)"></a> 
 
 
 1.	Which vendor had the most trips? How many trips were taken?
@@ -131,8 +131,9 @@ Tools were used for this project: Python, MySQL, and Tableau
                 o	The reason of the tipping rate has a significant jump on the Saturday and Sunday:
                     	Friends and family gatherings, trips, church, etc. 
 
-     ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/5.png)
-     ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/6.png)
+  ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/5.png)
+     
+  ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/6.png)
 
 
   6.	Can you predict the length of the trip based on factors that are known at pick-up? How might you use this information?
@@ -149,10 +150,10 @@ Tools were used for this project: Python, MySQL, and Tableau
     	
                           For example, the drivers will get the information on the trip distance before they pick up customers. If the distance is around 17.9 miles, the length of the trip                              will be more than an hour, which make sense since the traffic is heavy in New York, and the travel speed also needs to be considered.   (Please refer to the below                              screenshot)
 
-        ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/7.png)
+![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/7.png)
 
 
-## 🌽 Other  Insights  <a name = "OtherInsights"></a>
+## 🌽 Other  Insights  <a name = "other_insights"></a>
 
   7.	Get creative! Present any interesting trends, patterns, or predictions that you notice about this dataset.
 
@@ -165,8 +166,8 @@ Tools were used for this project: Python, MySQL, and Tableau
           •	Vendor #2 VeriFone Inc has more trips than #1 Creative Mobile Tech; however, #1 Creative Mobile Tech has more no charge payments (based on RateCodeID=1 Standard rate charge & 5               Negotiated fare). (Please refer to the below screenshots)
 
 
-          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/8.png)
-          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/9.png)
+  ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/8.png)
+  ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/9.png)
 
 
           Similarities:
@@ -183,8 +184,8 @@ Tools were used for this project: Python, MySQL, and Tableau
               
               o	Both maps show the same area for more customers and a higher charge rate.
 
-          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/10.png)
-          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/11.png)
+  ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/10.png)
+  ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/11.png)
 
 
 
