@@ -88,23 +88,32 @@ Tools were used for this project: Python, MySQL, and Tableau
 
 4.	Estimate the charged rate for each RateCodeID. (For this question, assume rates are only charged based on distance. )
 
-    •	Forecast model is applied to predict the charged rate 
-    •	It is for the next week from July 1st, 2014, to July 12th, 2014. 
+    •	Forecast model is applied to predict the charged rate
+  	
+    •	It is for the next week from July 1st, 2014, to July 12th, 2014.
+  	
     •	The orange/red line is the trend of the charged rate. Please refer to the below screenshot:
   	
     ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/3.png)
 
 
-5.	What was the average difference between the driven distance and the haversine distance of the trip?
+6.	What was the average difference between the driven distance and the haversine distance of the trip?
 
     The average difference was 8 miles:
+  	
         •	Calculations for two points: Pickup point & Dropoff point
+  	
               o	Pickup Point=MAKEPOINT([Pickup latitude],[Pickup longitude])
               o	Dropoff point=MAKEPOINT([Dropoff latitude],[Dropoff longitude])
+  	
         •	Calculation for Haversine distance: 15,185,531 miles.
+  	
               o	Haversine distance=Distance([Pickup Point],[Dropoff Point],'mi')
+  	
         •	Average difference calculation: 8 miles
+  	
               o	AVG([Haversine distance]-[Trip distance])
+  	
         •	Please refer to the below screenshot
 
    ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/3.png)
