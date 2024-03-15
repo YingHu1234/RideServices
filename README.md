@@ -19,8 +19,7 @@ Find insights from the dataset for ride service.
 - [About](#about)
 - [Data Clearning](#data_leaning)
 - [General Picture](#GeneralPicture)
-- [Result of Classification](#result)
-- [Topic_modeling](#topic_modeling)
+- [Other  Insights ](#OtherInsights)
 - [Conclusion](#conclusion)
 
 
@@ -116,4 +115,85 @@ Tools were used for this project: Python, MySQL, and Tableau
   	
         •	Please refer to the below screenshot
 
-   ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/3.png)
+   ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/4.png)
+
+
+  5.	Are there any patterns with tipping over time? If you find one, please provide a possible explanation!
+
+      These Patterns are based on the trip type #1 Street-hail:
+      
+           1.	The tipping rate has weekly seasonality:
+           
+                o	Every week, the tipping rate is slowly going up from Monday to Saturday, and Saturday has the highest tipping rate, then it goes down slowly to the bottom on Monday. 
+      
+           2.	There is the highest tipping rate from Saturday at 11:00 PM to Sunday at 00:00 AM:
+           
+                o	The reason of the tipping rate has a significant jump on the Saturday and Sunday:
+                    	Friends and family gatherings, trips, church, etc. 
+
+     ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/5.png)
+     ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/6.png)
+
+
+  6.	Can you predict the length of the trip based on factors that are known at pick-up? How might you use this information?
+
+        Yes, the length of the trip would be predicted:
+    	
+              •	Trip time calculation for the data from each trip
+    	
+                    o	DATEDIFF ('hour',[Lpep Pickup Datetime],[Lpep_dropoff_datetime])
+    	
+              •	Trip time and trip distance data were applied to the Quantile model
+    	
+                    o	MODEL_QUANTILE(0.5, ATTR([trip_time]), ATTR([Trip distance]))
+    	
+                          For example, the drivers will get the information on the trip distance before they pick up customers. If the distance is around 17.9 miles, the length of the trip                              will be more than an hour, which make sense since the traffic is heavy in New York, and the travel speed also needs to be considered.   (Please refer to the below                              screenshot)
+
+        ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/7.png)
+
+
+## 🌽 Other  Insights  <a name = "OtherInsights"></a>
+
+  7.	Get creative! Present any interesting trends, patterns, or predictions that you notice about this dataset.
+
+      The interesting facts are based on:
+
+          Two vendors #1 Creative Mobile Tech (283,214 records) vs #2 VeriFone Inc (1,036,551 records)
+
+          Differences:
+          
+          •	Vendor #2 VeriFone Inc has more trips than #1 Creative Mobile Tech; however, #1 Creative Mobile Tech has more no charge payments (based on RateCodeID=1 Standard rate charge & 5               Negotiated fare). (Please refer to the below screenshots)
+
+
+          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/8.png)
+          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/9.png)
+
+
+          Similarities:
+
+          •	Both vendors show the main customer charge comes from RateCodeID=1 Standard rate fare & 5 Negotiated fare. 
+          
+          •	Both data sets show the same pattern:
+          
+              o	There is a weekly seasonality
+              
+              	The customer charge rate reached the maximum on Saturday and the minimum on Monday.
+               
+              o	The peak charge rate occurs from Saturday at 11:00 PM to Sunday at 0:00 AM. 
+              
+              o	Both maps show the same area for more customers and a higher charge rate.
+
+          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/10.png)
+          ![image](https://github.com/YingHu1234/RideServices/blob/main/RideService/11.png)
+
+
+
+  ## 🎉 Conclusion <a name = "conclusion"></a>
+  
+The best date and hour for a driver to get more businesses and the peak charge rate from customers is from Saturday at 11:00 PM to Sunday at 0:00 AM, and the best locations are the common black area from both maps. (Please refer to the Q7 screenshots)
+
+
+      
+          
+
+
