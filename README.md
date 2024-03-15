@@ -48,12 +48,17 @@ Basic information of the dataset (please refer to Appendices on the page 10, 11 
       i.	Three rows (RateCodeID=99, which were not explained on the data dictionary)
       ii.	17994 rows (Trip distance was 0, but the fare amount was more than $100)
   e.	Null values: 1337759 counts on the “Ehail_fee” column.
+  
       i.	The null values were updated into 0 
+      
   f.	Final record: 1319765 rows, 20 columns
 
 Tools were used for this project: Python, MySQL, and Tableau
+
   a.	Viewed the dataset and imported it into Mysql: Python 
+  
   b.	Data cleaning and queries: Mysql
+  
   c.	Data analysis and visualization: Tableau
 
 
